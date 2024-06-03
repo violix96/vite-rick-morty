@@ -5,5 +5,9 @@ export default{
 </script>
 
 <template>
-    <h1>Ciao sono app-footer</h1>
+    <footer>
+        <div class="container">
+            <h1>Ciao sono app-footer</h1>
+        </div>
+    </footer>
 </template>

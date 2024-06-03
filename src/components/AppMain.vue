@@ -9,6 +9,11 @@ export default{
 </script>
 
 <template>
-    <h1>Ciao sono app-main</h1>
-    <AppCardVue />
+    <main>
+        <div class="container">
+            <h1>Ciao sono app-main</h1>
+            <AppCardVue />
+        </div>
+    </main>
+   
 </template>
