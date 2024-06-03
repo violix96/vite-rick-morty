@@ -10,10 +10,11 @@ export default{
 
 <template>
     <main>
-        <div class="container">
-            <h1>Ciao sono app-main</h1>
+        <div class="container" >
             <AppCardVue />
         </div>
     </main>
    
 </template>
+
+<style></style>

@@ -5,6 +5,7 @@ import './assets/scss/main.scss';
 
 // import roboto font
 import "@fontsource/roboto";
+import "@fontsource/montserrat";
 
 //import vue root component
 import App from './App.vue';

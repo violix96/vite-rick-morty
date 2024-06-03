@@ -7,7 +7,15 @@ export default{
 <template>
     <footer>
         <div class="container">
-            <h1>Ciao sono app-footer</h1>
+            <h2><strong>Found 20 characters</strong></h2>
         </div>
     </footer>
 </template>
+
+<style>
+h2{
+    text-align: center;
+
+}
+
+</style>
