@@ -1,13 +1,19 @@
 <script>
-export default{
+import { store } from '../store'
+export default {
     name: 'AppFooter',
+    data() {
+        return {
+            store,
+        }
+    }
 }
 </script>
 
 <template>
     <footer>
         <div class="container">
-            <h2><strong>Found 20 characters</strong></h2>
+            <h2><strong><span>  {{ store.results.length }}</span></strong></h2>
         </div>
     </footer>
 </template>
