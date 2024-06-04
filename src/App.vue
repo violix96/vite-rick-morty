@@ -25,7 +25,14 @@ export default {
 
       const filteredResults = store.results.filter((result) =>
         result.name.toLowerCase().includes(inputText.toLowerCase()) || result.status.toLowerCase().includes(inputText.toLowerCase()))
-      console.log(filteredResults)
+      console.log(filteredResults);
+      store.results = filteredResults;
+    },
+    onReset() {
+      axios.get(this.store.ApiUrl).then((response) => {
+        this.store.results = response.data.results;
+        this.store.info = response.data.info;
+      });
     }
   },
   created() {
@@ -39,7 +46,7 @@ export default {
 </script>
 <template>
   <AppHeader />
-  <AppInput @search-event="onSearch" />
+  <AppInput @search-event="onSearch" @reset-event="onReset"/>
   <AppMain />
   <AppFooter />
 </template>
