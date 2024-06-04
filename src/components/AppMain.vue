@@ -3,8 +3,8 @@ import AppCardVue from './AppCard.vue';
 export default{
     name: 'AppMain',
     components:{
-        AppCardVue
-    }
+    AppCardVue,
+}
 }
 </script>
 
