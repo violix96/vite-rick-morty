@@ -47,4 +47,12 @@ img {
     width: 250px;
 }
 
+p{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
 </style>
